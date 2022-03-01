@@ -9,8 +9,8 @@
     </style>
 
     <style name="text_style">
-        <item name="android:textSize">40sp</item>
-        <item name="android:layout_margin">40sp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_margin">20sp</item>
         <item name="android:layout_gravity">center</item>
     </style>
 </resources>

@@ -1,40 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/altura"
+    <TextView
+        android:id="@+id/Result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Altura"
+        android:text="@string/app_name"
+        android:textSize="48sp"
+        android:textColor="@color/purple_500"
+        android:layout_gravity="center"
+        android:layout_marginTop="100sp"
+        />
+
+    <EditText
+        android:id="@+id/altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/height"
         style="@style/text_style" />
 
 
     <EditText
         android:id="@+id/peso"
         style="@style/text_style"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Peso"/>
+        android:hint="@string/weight"/>
 
     <Button
         android:id="@+id/calcButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calcular"
-        android:layout_marginVertical="40sp"
+        android:text="@string/calcular"
+        android:layout_marginVertical="20sp"
         android:textSize="40sp"/>
 
-    <EditText
-        android:id="@+id/resultado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        style="@style/text_style"
-        />
+
 </LinearLayout>
